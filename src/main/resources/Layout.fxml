@@ -9,22 +9,20 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="cad_pessoa_app.EditorDados" 
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="cad_pessoa_app.EditorDados"
 	alignment="CENTER" vgap="10" hgap="10">
-	
-	<Label text="NOME:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+	<Label text="Nome:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
 	<TextField fx:id="txtNome" GridPane.rowIndex="0" GridPane.columnIndex="1" />
 	
-	<Label text="IDADE:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+	<Label text="Idade:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
 	<TextField fx:id="txtIdade" GridPane.rowIndex="1" GridPane.columnIndex="1" />
 	
-	<Label text="SEXO:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-	<Choice fx:id="choSexo" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+	<Label text="Sexo:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+	<ChoiceBox fx:id="choSexo" GridPane.rowIndex="2" GridPane.columnIndex="1" />
 	
-	<Label text="PRATICA ESPORTES" GridPane.rowIndex="3" GridPane.columnIndex="0" />
-	<CheckBox fx:id="chkEsportes" GridPane.rowIndex"3" GridPane.columnIndex="1" />
+	<Label text="Pratica esportes:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+	<CheckBox fx:id="chkEsportes" GridPane.rowIndex="3" GridPane.columnIndex="1" />
 	
-	<HBox alignment="CENTER" GridPane.rowIndex="4" GridPane.columnIndex="1" spacing ="10">
 		<GridPane.margin>
 			<Insets top="15" />
 		</GridPane.margin>

@@ -48,7 +48,7 @@ public class EditorDados extends Application{
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Pane root = FXMLLoader.load(getClass().getResource("Layout.fxml"));
+		Pane root = FXMLLoader.load(getClass().getResource("/Layout.fxml"));
 		primaryStage.show();
 		primaryStage.setTitle("Editor de Dados");
 		
