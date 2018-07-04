@@ -17,6 +17,14 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.converter.NumberStringConverter;
 
+/**
+ * Editor da dados com interface gráfica que gera
+ * um arquivo *.txt contendo as informações digitadas
+ * 
+ * 
+ * @author Rafael.Valle
+ *
+ */
 public class EditorDados extends Application{
 
 	@FXML
