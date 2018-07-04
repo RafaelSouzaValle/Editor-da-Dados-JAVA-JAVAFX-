@@ -1,6 +1,6 @@
 # Editor-da-Dados-JAVA-JAVAFX-
 
-## Editor de dados com exportação de arquivo *.txt. Possui interface gráfica.
+## Editor de dados com exportação de arquivo *.txt.
 
 ### Interface Layout:
 
