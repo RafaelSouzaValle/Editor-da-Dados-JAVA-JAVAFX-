@@ -1,5 +1,0 @@
-#Tue Jul 03 01:08:41 BRT 2018
-idade=99
-nome=jndf\u00E7hsdh
-sexo=MASCULINO
-esportes=false

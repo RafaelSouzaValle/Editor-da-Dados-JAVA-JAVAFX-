@@ -41,6 +41,9 @@ public class EditorDados extends Application{
 	
 	private Pessoa pessoa;	
 	
+	/*
+	 * Vincula formulário com os atributos das Properties
+	 */
 	@FXML
 	public void initialize() {
 		ObservableList<Sexo> sexoList = FXCollections.observableArrayList(Arrays.asList(Sexo.values()));
@@ -66,16 +69,21 @@ public class EditorDados extends Application{
 	
 	@FXML
 	public void onConfirm() {
-		
+		//salva a informação
 		storePessoa();
-		
+		//Fecha aplicação
 		Platform.exit();
 	}
 	
 	public void onCancel() {
+		//Fecha aplicação
 		Platform.exit();
 	}
 	
+	/*
+	 * Verifica se já existem informações no arquivo e,
+	 * em caso positivo, as carrega na tela da aplicação
+	 */
 	public void loadPessoa() {
 		pessoa = new Pessoa();
 		
@@ -87,6 +95,9 @@ public class EditorDados extends Application{
 		}
 	}
 	
+	/*
+	 * Altera o arquivo de acordo com as informações inseridas
+	 */
 	public void storePessoa() {
 		ConfigFile.setProperty(ConfigFile.PROP_NAME, pessoa.getNome());
 		ConfigFile.setProperty(ConfigFile.PROP_IDADE, String.valueOf(pessoa.getIdade()));
@@ -96,6 +107,9 @@ public class EditorDados extends Application{
 		ConfigFile.saveProperties();
 	}
 	
+	/*
+	 * Método principal
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
