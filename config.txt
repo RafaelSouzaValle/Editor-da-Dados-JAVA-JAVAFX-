@@ -1,0 +1,5 @@
+#Wed Jul 04 00:42:38 BRT 2018
+idade=57
+nome=Mr. Silva
+sexo=MASCULINO
+esportes=true
