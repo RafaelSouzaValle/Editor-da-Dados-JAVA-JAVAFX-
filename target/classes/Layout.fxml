@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="cad_pessoa_app.EditorDados" 
-	alignment="CENTER" vgap="10" hgap="10">
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1"
+	fx:controller="cad_pessoa_app.EditorDados">
 	
-	<Label text="NOME:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
-	<TextField fx:id="txtNome" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+	<padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   
+	<Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.rowIndex="0" />
 	
-	<Label text="IDADE:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-	<TextField fx:id="txtIdade" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+	<Label text="Idade:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<TextField fx:id="txtIdade" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 	
-	<Label text="SEXO:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-	<Choice fx:id="choSexo" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+	<Label text="Sexo:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	<ChoiceBox fx:id="choSexo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 	
-	<Label text="PRATICA ESPORTES" GridPane.rowIndex="3" GridPane.columnIndex="0" />
-	<CheckBox fx:id="chkEsportes" GridPane.rowIndex"3" GridPane.columnIndex="1" />
+	<Label text="Pratica esportes:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+	<CheckBox fx:id="chkEsportes" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 	
-	<HBox alignment="CENTER" GridPane.rowIndex="4" GridPane.columnIndex="1" spacing ="10">
+	<HBox alignment="CENTER_RIGHT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
 		<GridPane.margin>
 			<Insets top="15" />
 		</GridPane.margin>
-		<Button text="OK" prefWidth="70" onAction="#onConfirm" />
-		<Button text="Cancelar" prefWidth="70" onAction="#onCancel" />
+		<Button onAction="#onConfirm" prefWidth="70" text="OK" />
+		<Button onAction="#onCancel" prefWidth="70" text="Cancelar" />
 	</HBox>
 </GridPane>
